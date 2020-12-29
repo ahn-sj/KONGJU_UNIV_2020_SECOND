@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html> 
+<!-- head 시작 -->
+<head>
+	<meta charset = "utf-8">
+	<meta name= "keywords" content= "HTML5, CSS, JavaScript">
+	<!-- css 연결 -->
+	<link rel= "stylesheet" type= "text/css" href= "../CSS/main.css">
+	<!-- 상단 탭 로고 이미지 -->
+	<link rel= "shortcut icon" type= "image/x-icon" href="../Images/SJ_logo.jpg"> 
+	<!-- 상단 탭 사이트 이름 -->
+	<title>재몰 Jae-Mall</title>
+<!-- head 끝 -->
+</head>
+
+<!-- body 시작 -->
+<body> 
+	<!-- body div 시작 -->
+	<div>
+		<!-- header 시작 -->
+		<header class="header">
+		<!-- 최상단 사이트 메인 로고 -->
+		<a href = "../index.html"><img src = "../Images/SJ_logo2.jpg" align = "left"></a>
+		<div><br></div>
+		<!-- 장바구니 기능 -->
+		<div class = "basket">
+			<img src = "../Images/shop_basket.jpg" onclick = "alert('장바구니 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 최근 본 상품 기능 -->
+		<div class = "lately">
+			<img src = "../Images/lately.jpg" onclick = "alert('최근 본 상품 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 관심 상품 기능 -->
+		<div class = "product_of_interest">
+			<img src = "../Images/product_of_interest.jpg" onclick = "alert('찜하기 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		<div class = "head"></div>
+		<br>
+		<!-- 메뉴바 시작-->
+		<div class="Menu_div">
+			<a href="../HTML/fruit_main.html"> &nbsp;과일&nbsp;</a>
+			<a href="../HTML/vegetable_main.html"> &nbsp;채소&nbsp;</a>
+			<a href="../HTML/rice.html"> &nbsp;쌀&nbsp;</a>
+			<a href="../HTML/milk_products_main.html"> &nbsp;우유/유제품&nbsp;</a>
+			<a href="../HTML/refrigeration_frozen_main.html"> &nbsp;냉장/냉동&nbsp;</a> 
+			<a href="../HTML/drink.html"> &nbsp;생수/음료&nbsp;</a> 
+			<a href="../HTML/signUp.html" style="margin-left: 110px;"> &nbsp;회원가입&nbsp;</a>
+			<a href="../HTML/login_main.html" style="margin-left: 27px;"> &nbsp;로그인&nbsp; </a>
+		<!-- 메뉴바 끝-->
+		</div>
+		<!-- header 끝-->
+		</header>
+	<!-- body div 끝 -->
+	</div>
+	
+	
+	<!-- -----------------------------------------------------
+	----------------------------------------------------------- -->
+
+	<br><br>
+	<div class = "fruit_content" align = "center">
+		<h1 class = "page_bg_color"> 회원가입 </h1>
+		<h4 class = "page_bg_color"> Home / 회원가입 </h4><br>
+		<hr width = "995px" color = "gray" border = "2">
+	</div>
+	<br><br>
+	
+	<!-- 회원가입 영역 시작 -->
+	<div class = "content_div_signUp">	
+		<div class = "signUp_img_div"><img src = "../Images/SJ_logo.jpg" style = "width: 300px; height: 300px;"></div>
+		<!-- 내용 table 시작 -->
+		<table align = "center" class = "signUp_table">
+			<tr> <!-- 아이디 -->
+				<td colspan = "3">&nbsp;아이디 </td>
+			</tr>
+			
+			<tr>
+				<td colspan = "3"><input type = "text" id = "signUp_id"></td>
+			</tr>			
+			
+			<tr> <!-- 비밀번호 -->
+				<td colspan = "3">&nbsp;비밀번호 </td>
+			</tr>
+			
+			<tr>
+				<td colspan = "3"><input type = "password" id = "signUp_pw"></td>
+			</tr>
+			
+			<tr> <!-- 비밀번호 재확인 -->
+				<td colspan = "3">&nbsp;비밀번호 재확인 </td>
+			</tr>
+			
+			<tr>
+				<td colspan = "3"><input type = "password" id = "signUp_pw_chk"></td>
+			</tr>
+			
+			<tr> <!-- 이름 -->
+				<td colspan = "3">&nbsp;이름 </td>
+			</tr>
+			
+			<tr>
+				<td colspan = "3"><input type = "text" id = "signUp_name"></td>
+			</tr>			
+			
+			<tr> <!-- 생년월일 -->
+				<td colspan = "3">&nbsp;생년월일 </td>
+			</tr>
+			
+			<tr>
+				<td> <!-- 년 -->
+					<input type = "number" id = "yyy" placeholder = "&nbsp;년(ex) 2020)" style = "width: 160px; height: 40px; margin: 0 auto">
+				</td>
+				
+				<td> <!-- 월 -->
+					<select id = "mmm" style = "width: 160px; height: 45px;">
+					<option value = "">월</option>
+					<option value = "1">1</option>
+					<option value = "2">2</option>
+					<option value = "3">3</option>
+					<option value = "4">4</option>
+					<option value = "5">5</option>
+					<option value = "6">6</option>
+					<option value = "7">7</option>
+					<option value = "8">8</option>
+					<option value = "9">9</option>
+					<option value = "10">10</option>
+					<option value = "11">11</option>
+					<option value = "12">12</option>
+				</td>
+				
+				<td> <!-- 일 -->
+					<input type = "number" id = "ddd" placeholder = "&nbsp;일" style = "width: 160px; height: 39px; margin: 0 auto">
+				</td>					
+			</tr>	
+
+			<tr> <!-- 성별 -->
+				<td colspan = "3">&nbsp;성별 </td>
+			</tr>
+			<tr>
+				<td colspan = "3">
+					<select id = "signUp_gender" style="width: 508px; height: 45px;"> 
+					<option value = ""> 성별 </option>
+					<option value = "man"> 남 </option>
+					<option value = "woman"> 여 </option>
+					<option value = "no-choice"> 선택 안함 </option>
+				</td>	
+			</tr>					
+
+			<tr> <!-- 휴대전화 -->
+				<td colspan = "3">&nbsp;휴대전화 </td>
+			</tr>
+			<tr> 
+				<td colspan = "3"> 
+					<input id = "signUp_phone" type = "text" placeholder="&nbsp;전화번호 입력 ((-) 없이 입력하세요.)">
+				</td>
+			</tr>
+			
+			<tr> <!-- 이메일 -->
+				<td colspan = "3">&nbsp;이메일 </td>
+			</tr>
+			<tr>
+				<td colspan = "3"> 
+					<input type = "text" id = "signUp_email" placeholder="&nbsp;선택입력">
+				</td>
+			</tr>
+		<!-- 내용 table 끝-->
+		</table>
+		
+		
+		<!-- 가입하기 버튼 -->
+		<table align = "center" class = "signUp_btn_table">
+			<tr>
+				<td>
+					<input type = "button" value = "가입하기" class = "signUp_btn" onclick = "signUp_chk()">
+				</td>
+			</tr>
+		</table>
+		<br>		
+	<!-- 회원가입 영역 시작 -->
+	</div>
+	
+	
+	<br><br>
+	<!-- footer 시작 -->
+	<!-- footer Line #1 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<div class="footer">				
+		<footer>
+			<h3>Name : ahn-seongjae&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			<h3>Email : jaesa5221@gmail.com<br><br></h3></font>
+			<a href = "https://github.com/ahn-sj" target = "_blank"><img src = "../Images/git.jpg" width = "100" height = "100"></a>
+			<a href = "https://ahn-sj.github.io/3_2/Web_Project/index.html" target = "_blank">
+			<img src = "../Images/SJ_logo.jpg" style = "width: 97px; height: 96px; border: 1px solid black;"></a><br><br>
+		</footer>
+	</div>
+	<!-- footer Line #2 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<font color= "black" align = "center"><h3> copyright© SEONGJAE </h3></font>
+	<font color= "black" align = "center"><h3> Developed by SeongJae </h3></font><br><br>
+	
+	<!-- 상단이미지 클릭시 화면 제일 상단으로 이동 -->
+	<div class = "go_to_top" onclick="window.scrollTo(0,0);">
+		<img src = "../Images/go_to_zero_zero.jpg" onmouseover = 'this.src = "../Images/go_to_zero_change_zero.jpg"' onmouseout='this.src="../Images/go_to_zero_zero.jpg"' width = "50" height = "50">
+	</div>
+<!-- body 끝 -->
+	<script type = "text/javascript" src="../JS/common.js"></script>
+</body>
+</html>

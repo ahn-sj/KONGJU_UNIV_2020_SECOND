@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html> 
+<!-- head 시작 -->
+<head>
+	<meta charset = "utf-8">
+	<meta name= "keywords" content= "HTML5, CSS, JavaScript">
+	<!-- css 연결 -->
+	<link rel= "stylesheet" type= "text/css" href= "../../CSS/main.css">
+	<!-- 상단 탭 로고 이미지 -->
+	<link rel= "shortcut icon" type= "image/x-icon" href="../../Images/SJ_logo.jpg"> 
+	<!-- 상단 탭 사이트 이름 -->
+	<title>재몰 Jae-Mall</title>
+<!-- head 끝 -->
+</head>
+
+<!-- body 시작 -->
+<body> 
+	<!-- body div 시작 -->
+	<div>
+		<!-- header 시작 -->
+		<header class="header">
+		<!-- 최상단 사이트 메인 로고 -->
+		<a href = "./index.html"><img src = "../../Images/SJ_logo2.jpg" align = "left"></a>
+		<div><br></div>
+		<!-- 장바구니 기능 -->
+		<div class = "basket">
+			<img src = "../../Images/shop_basket.jpg" onclick = "alert('장바구니 기능을 사용하실 수 없습니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 최근 본 상품 기능 -->
+		<div class = "lately">
+			<img src = "../../Images/lately.jpg" onclick = "alert('최근 본 상품 기능을 사용하실 수 없습니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 관심 상품 기능 -->
+		<div class = "product_of_interest">
+			<img src = "../../Images/product_of_interest.jpg" onclick = "alert('찜하기 기능을 사용하실 수 없습니다.')" align = "right"></a>
+		</div>
+		<div class = "head"></div>
+		<br>
+		<!-- 메뉴바 시작-->
+		<div class="Menu_div">
+			<a href="./fruit_main.html"> &nbsp;과일&nbsp;</a>
+			<a href="./vegetable_main.html"> &nbsp;채소&nbsp;</a>
+			<a href="./rice.html"> &nbsp;쌀&nbsp;</a>
+			<a href="./milk_products_main.html"> &nbsp;우유/유제품&nbsp;</a>
+			<a href="./refrigeration_frozen_main.html"> &nbsp;냉장/냉동&nbsp;</a> 
+			<a href="./drink.html"> &nbsp;생수/음료&nbsp;</a> 
+			<a href="#" style="margin-left: 110px;" onclick = "case_signup_login()"> &nbsp;회원가입&nbsp;</a>
+			<a href="#" style="margin-left: 27px;" onclick = "logout_chk()"> &nbsp;로그아웃&nbsp; </a>
+		<!-- 메뉴바 끝-->
+		</div>
+		<!-- header 끝-->
+		</header>
+	<!-- body div 끝 -->
+	</div>
+	
+	
+	<!-- -----------------------------------------------------
+	----------------------------------------------------------- -->
+	
+	<br><br>
+	<div class = "fruit_content" align = "center">
+		<h1 class = "page_bg_color"> 상품리스트 </h1>
+		<h4 class = "page_bg_color"> Home / 과일 </h4><br>
+		<hr width = "995px" color = "gray" border = "2">
+	</div>
+	<br><br>
+	
+	<!-- 상품리스트 Line #1 시작 -->
+	<div class = "Content_Div">
+		<div class = "Main_Best_Img1" align = "center">	
+			<!-- 2) 과일 페이지처럼 이미지 클릭시 해당 링크로 이동 -->
+			<a href = "./detail_fru_tangerine.html"><img src = "../../Images/tangerine.jpg"></a>
+			<a href = "./detail_fru_pomegranate.html"><img src = "../../Images/pomegranate.jpg"></a>
+			<a href = "./detail_fru_citron.html"><img src = "../../Images/citron.jpg"></a>
+		</div>
+		
+		<!-- Line #1 -->
+		<table width = "980" class = "product_explain">
+			<tr>
+				<td style = "padding-left: 10px;"><a href = "./detail_fru_tangerine.html"><h3> [귤] 8공학관 뒤뜰 귤 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 50px;"> 27,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 10px;"><a href = "./detail_fru_pomegranate.html"><h3> [석류] 8공학관 뒤뜰 석류 </h3></td></a>
+				<td class = "product_prices"> 28,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 10px;"><a href = "./detail_fru_citron.html"><h3> [유자] 8공학관 뒤뜰 유자 </h3></td></a>
+				<td class = "product_prices"> 29,000</td><td style = "font-weight: bold;">원</td>
+			</tr>
+		</table>		
+		
+		<table width = "1000">
+			<tr align = "center">
+				<td><a href = "./detail_fru_tangerine.html"><img src = "../../Images/detail.jpg"></a></td>
+				<td><a href = "./detail_fru_pomegranate.html"><img src = "../../Images/detail.jpg" align = ""></a></td>
+				<td><a href = "./detail_fru_citron.html"><img src = "../../Images/detail.jpg" align = ""></a></td>
+			</tr>
+		</table>
+
+	</div><br><br></div>
+	<!-- 상품리스트 Line #1 끝 -->
+
+	<!-- 상품리스트 Line #2 시작 -->
+	<div class = "Content_Div">
+		<div class = "Main_Best_Img1" align = "center">	
+			<!-- 2) 과일 페이지처럼 이미지 클릭시 해당 링크로 이동 -->
+			<a href = "./detail_fru_apple.html"><img src = "../../Images/apple.jpg"></a>
+			<a href = "./detail_fru_banana.html"><img src = "../../Images/banana.jpg"></a>
+			<a href = "./detail_fru_blueberry.html"><img src = "../../Images/blueberry.jpg"></a>
+		</div>
+		
+		
+		<!-- Line #1 -->
+		<table width = "980" class = "product_explain">
+			<tr>
+				<td style = "padding-left: 10px;"><a href = "./detail_fru_apple.html"><h3> [사과] 과과사과 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 80px;"> 17,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 40px;"><a href = "./detail_fru_banana.html"><h3> [바나나] 나나바나나 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 60px;"> 18,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 20px;"><a href = "./detail_fru_blueberry.html"><h3> [블루베리] 베리블루 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 60px;"> 19,000</td><td style = "font-weight: bold;">원</td>
+			</tr>
+		</table>		
+		
+		<table width = "1000">
+			<tr align = "center">
+				<td><a href = "./detail_fru_apple.html"><img src = "../../Images/detail.jpg"></a></td>
+				<td><a href = "./detail_fru_banana.html"><img src = "../../Images/detail.jpg" align = ""></a></td>
+				<td><a href = "./detail_fru_blueberry.html"><img src = "../../Images/detail.jpg" align = ""></a></td>
+			</tr>
+		</table>
+	<!-- 상품리스트 Line #2 끝 -->
+	</div><br><br></div>
+	
+		<!-- 페이지 이동 -->
+	<table class = "change_page" align = "center" >
+		<tr>
+			<td><a href = "./fruit_main.html">&nbsp;처음&nbsp;</td></a>
+			<td><a href = "./fruit_main.html">&nbsp;이전&nbsp;</td></a>
+			<td bgcolor = "gray"><a href = "./fruit_main.html" style = "color: white;">&nbsp;1&nbsp;</td></a>
+			<!-- 2번째 페이지 생성하기 href 수정해야됌-->
+			<td><a href = "./fruit_main2.html">&nbsp;2&nbsp;</td></a>
+			<td><a href = "./fruit_main2.html">&nbsp;다음&nbsp;</td></a>
+			<td><a href = "./fruit_main2.html">&nbsp;끝&nbsp;</td></a>
+		</tr>
+	</table>
+	
+	<br><br>
+	<!-- footer 시작 -->
+	<!-- footer Line #1 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<div class="footer">				
+		<footer>
+			<h3>Name : ahn-seongjae&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			<h3>Email : jaesa5221@gmail.com<br><br></h3></font>
+			<a href = "https://github.com/ahn-sj" target = "_blank"><img src = "../../Images/git.jpg" width = "100" height = "100"></a>
+			<a href = "https://ahn-sj.github.io/3_2/Web_Project/index.html" target = "_blank">
+				<img src = "../../Images/SJ_logo.jpg" style = "width: 97px; height: 96px; border: 1px solid black;"></a><br><br>
+			</b>
+		</footer>
+	</div>
+	<!-- footer Line #2 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<font color= "black" align = "center"><h3> copyright© SEONGJAE </h3></font>
+	<font color= "black" align = "center"><h3> Developed by SeongJae </h3></font><br><br>
+	
+	<!-- 상단이미지 클릭시 화면 제일 상단으로 이동 -->
+	<div class = "go_to_top" onclick="window.scrollTo(0,0);">
+		<img src = "../../Images/go_to_zero_zero.jpg" onmouseover = 'this.src="../../Images/go_to_zero_change_zero.jpg"' onmouseout='this.src="../../Images/go_to_zero_zero.jpg"' width = "50" height = "50">
+	</div>
+<!-- body 끝 -->
+	<script type = "text/javascript" src="../../JS/common.js"></script>
+</body>
+</html>

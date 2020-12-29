@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html> 
+<!-- head 시작 -->
+<head>
+	<meta charset = "utf-8">
+	<meta name= "keywords" content= "HTML5, CSS, JavaScript">
+	<!-- css 연결 -->
+	<link rel= "stylesheet" type= "text/css" href= "CSS/main.css">
+	<!-- 상단 탭 로고 이미지 -->
+	<link rel= "shortcut icon" type= "image/x-icon" href="./Images/SJ_logo.jpg"> 
+	<!-- 상단 탭 사이트 이름 -->
+	<title>재몰 Jae-Mall</title>
+<!-- head 끝 -->
+</head>
+
+<!-- body 시작 -->
+<body> 
+	<!-- body div 시작 -->
+	<div>
+		<!-- header 시작 -->
+		<header class="header">
+		<!-- 최상단 사이트 메인 로고 -->
+		<a href = "./index.html"><img src = "./Images/SJ_logo2.jpg" align = "left"></a>
+		<div><br></div>
+		<!-- 장바구니 기능 -->
+		<div class = "basket">
+			<img src = "./Images/shop_basket.jpg" onclick = "alert('장바구니 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 최근 본 상품 기능 -->
+		<div class = "lately">
+			<img src = "./Images/lately.jpg" onclick = "alert('최근 본 상품 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		
+		<!-- 관심 상품 기능 -->
+		<div class = "product_of_interest">
+			<img src = "./Images/product_of_interest.jpg" onclick = "alert('찜하기 기능은 로그인 후 이용 가능합니다.')" align = "right"></a>
+		</div>
+		<div class = "head"></div>
+		<br>
+		<!-- 메뉴바 시작-->
+		<div class="Menu_div">
+			<a href="./HTML/fruit_main.html"> &nbsp;과일&nbsp;</a>
+			<a href="./HTML/vegetable_main.html"> &nbsp;채소&nbsp;</a>
+			<a href="./HTML/rice.html"> &nbsp;쌀&nbsp;</a>
+			<a href="./HTML/milk_products_main.html"> &nbsp;우유/유제품&nbsp;</a>
+			<a href="./HTML/refrigeration_frozen_main.html"> &nbsp;냉장/냉동&nbsp;</a> 
+			<a href="./HTML/drink.html"> &nbsp;생수/음료&nbsp;</a> 
+			<a href="./HTML/signUp.html" style="margin-left: 110px;"> &nbsp;회원가입&nbsp;</a>
+			<a href="./HTML/login_main.html" style="margin-left: 27px;"> &nbsp;로그인&nbsp; </a>
+		<!-- 메뉴바 끝-->
+		</div>
+		<!-- header 끝-->
+		</header>
+	<!-- body div 끝 -->
+	</div>
+	
+	
+	<!-- -----------------------------------------------------
+	----------------------------------------------------------- -->
+
+
+	<!-- 내용 div 시작 -->
+	<div class = "Content_Div"> 
+		<img src = "./Images/main_img01.jpg" width="1000px" id = "main_img_id"><br><br><br>
+
+		<table align = "center" class="login_btn_table" align = "center">
+			<tr>
+				<td>
+					<input type = "button" value = "이전" class = "main_chg_btn" onclick = "main_img_chg(0)">
+					<input type = "button" value = "다음" class = "main_chg_btn" onclick = "main_img_chg(1)">
+				</td>
+			</tr>
+		</table><br><br><br>
+		
+		<hr width = "250px" color = "gray" border = "3">	<br><br><br>
+		
+		<div class = "main_top_5">
+			<hr width = "995px" color = "gray" border = "3" bgcolor = "gray">
+			<p align = "center" style = "font-size: 25px; font-weight: bold;"> 인기 TOP 5 </p>
+			<hr width = "995px" color = "gray" border = "3">
+		</div><br>
+		
+
+		
+		<!-- 메인 인기 이미지 첫번째 줄 시작 -->
+		<div class = "Content_Div">
+			<div class = "Main_Best_Img1" align = "center">	
+				<!-- 2) 과일 페이지처럼 이미지 클릭시 해당 링크로 이동 -->
+				<a href = "./HTML/detail_fru_tangerine.html"><img src = "./Images/tangerine.jpg"></a>
+				<a href = "./HTML/detail_fru_pomegranate.html"><img src = "./Images/pomegranate.jpg"></a>
+				<a href = "./HTML/detail_fru_citron.html"><img src = "./Images/citron.jpg"></a>
+			</div>
+		
+		<!-- Line #1 설명 / 가격 -->
+		<table width = "980" class = "product_explain">
+			<tr>
+				<td style = "padding-left: 10px;"><a href = "./HTML/detail_fru_tangerine.html"><h3> [귤] 8공학관 뒤뜰 귤 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 50px;"> 27,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 10px;"><a href = "./HTML/detail_fru_pomegranate.html"><h3> [석류] 8공학관 뒤뜰 석류 </h3></td></a>
+				<td class = "product_prices"> 28,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 10px;"><a href = "./HTML/detail_fru_citron.html"><h3> [유자] 8공학관 뒤뜰 유자 </h3></td></a>
+				<td class = "product_prices"> 29,000</td><td style = "font-weight: bold;">원</td>
+			</tr>
+		</table>		
+		
+		<!-- Line #2 자세히보기 -->
+		<table width = "1000">
+			<tr align = "center">
+				<td><a href = "./HTML/detail_fru_tangerine.html"><img src = "./Images/detail.jpg"></a></td>
+				<td><a href = "./HTML/detail_fru_pomegranate.html"><img src = "./Images/detail.jpg" align = ""></a></td>
+				<td><a href = "./HTML/detail_fru_citron.html"><img src = "./Images/detail.jpg" align = ""></a></td>
+			</tr>
+		</table>
+
+		<!-- 메인 인기 이미지 첫번째 줄 끝 -->
+		</div><br><br>
+	
+		<!-- 메인 인기 이미지 두번째 줄-->
+		<!-- 3) 이미지에 대한 설명 추가 및 2)와 기능 동일 -->
+		<div class = "Main_Best_Img2" align = "center">	
+			<!-- 2) 과일 페이지처럼 이미지 클릭시 해당 링크로 이동 -->
+			<a href = "./HTML/detail_fru_apple.html"><img src = "./Images/apple.jpg"></a>
+			<a href = "./HTML/detail_veg_radish.html"><img src = "./Images/radish.jpg"></a>
+		</div>
+		
+		<!-- 메인 인기 이미지 제목 및 가격 두번째 줄 -->
+		<table width = "600" class = "product_explain" align = "center">
+			<tr>
+				<td><a href = "./HTML/detail_fru_apple.html"><h3>[사과] 과과사과 </h3></td></a>
+				<td class = "product_prices" style = "padding-left: 30px;"> 27,000</td><td style = "font-weight: bold;">원</td>
+				<td style = "padding-left: 60px;"><a href = "./HTML/detail_veg_radish.html"><h3> [무] 8공학관 앞마당 무 </h3></td>
+				<td class = "product_prices"> 20,000</td><td style = "font-weight: bold;">원</td>
+			</tr>
+		</table>	
+		
+		<!-- 자세히 보기 이미지 #2 -->
+		<table width = "800">
+			<tr align = "center">
+				<td style = "padding-left: 150px;"><a href = "./HTML/detail_fru_apple.html"><img src = "./Images/detail.jpg"></a></td>
+				<td><a href = "./HTML/detail_veg_radish.html"><img src = "./Images/detail.jpg" align = ""></a></td>
+			</tr>
+		</table>		
+		<br><br><br>	
+	<!-- 내용 div 끝 -->
+	
+	<hr width = "250px" color = "gray" border = "3">	<br><br><br>		
+
+		<div class = "main_top_5" width = "1000"> 
+			<hr width = "995px" color = "gray" border = "3">
+			<p align = "center" style = "font-size: 25px; font-weight: bold;"> 크리스마스 이벤트 (20. 12. 24 ~ 20. 12. 26) </p>
+			<hr width = "995px" color = "gray" border = "3">
+		</div>
+		<a href = "#"><img src = "./Images/christmas.jpg" onclick = "alert('이벤트 기간이 아닙니다.')" width = "1000" height = "500"><br><br>
+	
+	<br><br><br><hr width = "250px" color = "gray" border = "3">	<br><br><br>	
+	
+		<div class = "main_top_5" width = "1000"> 
+			<hr width = "995px" color = "gray" border = "3">
+			<p align = "center" style = "font-size: 25px; font-weight: bold;"> 신년 이벤트 (20. 12. 31 ~ 21. 01. 02) </p>
+			<hr width = "995px" color = "gray" border = "3">
+		</div>
+		<a href = "#"><img src = "./Images/2021.jpg" onclick = "alert('이벤트 기간이 아닙니다.')" width = "1000" height = "500"></a><br><br><br><br><br>
+		
+		<hr width = "250px" color = "gray" border = "3">	<br><br><br>
+		
+		<div class = "main_top_5" width = "1000"> 
+			<hr width = "995px" color = "gray" border = "3">
+			<p align = "center" style = "font-size: 25px; font-weight: bold;"> 대학생 특가 할인 </p>
+			<hr width = "995px" color = "gray" border = "3">
+		</div><br><br>
+		<h4 align = "center"> 이벤트를 준비중입니다.. </h4><br><br>
+		
+		<hr width = "250px" color = "gray" border = "3">	<br><br><br><br><br>
+	</div>
+	
+	<br><br>
+	<!-- footer 시작 -->
+	<!-- footer Line #1 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<div class="footer">				
+		<footer>
+			<h3>Name : ahn-seongjae&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			<h3>Email : jaesa5221@gmail.com<br><br></h3></font>
+			<a href = "https://github.com/ahn-sj" target = "_blank"><img src = "./Images/git.jpg" width = "100" height = "100"></a>
+			<a href = "https://ahn-sj.github.io/3_2/Web_Project/index.html" target = "_blank">
+				<img src = "./Images/SJ_logo.jpg" style = "width: 97px; height: 96px; border: 1px solid black;"></a><br><br>
+			</b>
+		</footer>
+	</div>
+	<!-- footer Line #2 -->
+	<hr width = "100%" color = "gray" border = "2">
+	<font color= "black" align = "center"><h3> copyright© SEONGJAE </h3></font>
+	<font color= "black" align = "center"><h3> Developed by SeongJae </h3></font><br><br>
+	
+	<!-- 상단이미지 클릭시 화면 제일 상단으로 이동 -->
+	<div class = "go_to_top" onclick="window.scrollTo(0,0);">
+		<img src = "./Images/go_to_zero_zero.jpg" onmouseover = 'this.src="./Images/go_to_zero_change_zero.jpg"' onmouseout='this.src="./Images/go_to_zero_zero.jpg"' width = "50" height = "50">
+	</div>
+<!-- body 끝 -->
+	<script type = "text/javascript" src="./JS/common.js"></script>
+</body>
+</html>
